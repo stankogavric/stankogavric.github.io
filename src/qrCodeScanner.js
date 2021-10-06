@@ -13,6 +13,8 @@ let scanning = false;
 
 let scrollToBottom = true;
 
+let reload = false;
+
 output = [];
 
 function downloadCsv(){
@@ -26,7 +28,7 @@ function downloadCsv(){
   var time = ('0' + today.getHours()).slice(-2) + "-" + ('0' + today.getMinutes()).slice(-2) + "-" + ('0' + today.getSeconds()).slice(-2);
   var dateTime = date+' '+time;
   hiddenElement.download = "Attendance " + dateTime + '.csv';  
-  hiddenElement.click();  
+  hiddenElement.click();
 }
 
 qrcode.callback = res => {
@@ -66,11 +68,10 @@ btnScanQR.onclick = () => {
     //qrResult.hidden = false;
     canvasElement.hidden = true;
 
-    img.src = "./images/circle_play_icon.svg";
+    img.src = "./images/reload_icon.svg";
+    reload = true;
 
     downloadCsv();
-
-    console.log(output);
 
     return;
   }
@@ -87,6 +88,14 @@ btnScanQR.onclick = () => {
       video.srcObject = stream;
       video.play();
       tick();
+      
+      if (reload){
+        reload = false;
+        output = [];
+        outputData.innerText = "";
+        scrollToBottom = true;
+      }
+
       scan();
     });
 };
