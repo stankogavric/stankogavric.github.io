@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Attendance</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>QR Code Generator</h1>
+
+      <a id="qr-code-generator">
+        <img src="./images/qr_code_generator.svg">
+      <a/>
+
+      <div>
+        <a href="https://www.the-qrcode-generator.com/">www.the-qrcode-generator.com/</a>
+      </div>
+
+      <br>
+
+      <h1>QR Code Attendance</h1>
+
+      <a id="btn-scan-qr">
+        <img src="./images/circle_play_icon.svg">
+      <a/>
+
+      <br>
+
+      <canvas hidden="" id="qr-canvas"></canvas>
+
+      <div id="qr-result">
+        <span id="outputData"></span>
+      </div>
+    </div>
+    <script src="./src/qr.js"></script>
+    <script src="./src/qrCodeScanner.js"></script>
+  </body>
+</html>
