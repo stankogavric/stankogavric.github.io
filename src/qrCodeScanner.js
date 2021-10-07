@@ -22,7 +22,6 @@ function downloadCsv(){
   hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(output);  
   hiddenElement.target = '_blank';  
     
-  //provide the name for the CSV file to be downloaded  
   var today = new Date();
   var date = ('0' + today.getDate()).slice(-2)+"-"+('0' + (today.getMonth()+1)).slice(-2)+"-"+today.getFullYear();
   var time = ('0' + today.getHours()).slice(-2) + "-" + ('0' + today.getMinutes()).slice(-2) + "-" + ('0' + today.getSeconds()).slice(-2);
@@ -33,7 +32,7 @@ function downloadCsv(){
 
 qrcode.callback = res => {
   if (res) {
-    if (!output.includes(res)){
+    if (!output.includes(res) && res.length == 10){
       output.push(res);
       outputData.innerText += res;
       outputData.appendChild(document.createElement("br"));
