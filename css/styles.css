@@ -12220,7 +12220,7 @@ header.masthead-blog .site-heading .subheading {
   line-height: 1.1;
   display: block;
   margin-top: 0.625rem;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 }
 header.masthead-blog .post-heading h1, header.masthead-blog .post-heading .h1 {
   font-size: 2.25rem;
@@ -12232,15 +12232,15 @@ header.masthead-blog .post-heading .subheading {
 }
 header.masthead-blog .post-heading .subheading {
   font-size: 1.5rem;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin: 0.75rem 0 2rem;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 }
 header.masthead-blog .post-heading .meta {
   font-size: 1.25rem;
   font-weight: 300;
   font-style: italic;
-  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 }
 header.masthead-blog .post-heading .meta a {
   color: #fff;
@@ -12294,6 +12294,7 @@ header.masthead-blog .site-heading .h1 {
   margin-bottom: 0.625rem;
 }
 .post-preview > a > .post-subtitle {
+  font-size: calc(1.3rem + 0.6vw);
   font-weight: 300;
   margin-bottom: 0.625rem;
 }
