@@ -16,23 +16,23 @@ window.addEventListener('DOMContentLoaded', event => {
     var navbarShrink = function (hover = false) {
         const navbarCollapsible = document.body.querySelector('.main-nav-shrink');
 
-        navbarBrand.src = "assets/img/lmns-black.svg";
+        // navbarBrand.src = "assets/img/lmns-black.svg";
 
         if (!navbarCollapsible) {
             return;
         }
 
-        navbarCollapsible.classList.add('navbar-shrink')
+        // navbarCollapsible.classList.add('navbar-shrink')
         
         if (hover === true) {
             navbarBrand.src = "assets/img/lmns-black.svg";
             navbarCollapsible.classList.add('navbar-shrink')
         }
         else if (window.scrollY === 0) {
-            /* if (window.matchMedia("(min-width: 992px)").matches) {
+            if (window.matchMedia("(min-width: 992px)").matches) {
                 navbarBrand.src = "assets/img/lmns.svg";
-            } */
-            // navbarCollapsible.classList.remove('navbar-shrink')
+            }
+            navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarBrand.src = "assets/img/lmns-black.svg";
             navbarCollapsible.classList.add('navbar-shrink')
