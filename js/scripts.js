@@ -14,6 +14,14 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
     var navbarShrink = function (hover = false) {
+        const masthead = document.body.querySelector('.masthead');
+        if (window.scrollY === 0) {
+            masthead.classList.remove('fadeOutUp')
+            masthead.classList.add('fadeInDown')
+        } else {
+            masthead.classList.remove('fadeInDown')
+            masthead.classList.add('fadeOutUp')
+        }
         const navbarCollapsible = document.body.querySelector('.main-nav-shrink');
 
         // navbarBrand.src = "assets/img/lmns-black.svg";

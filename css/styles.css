@@ -228,7 +228,7 @@ sup {
 }
 
 a {
-  color: #d5b09c;
+  color: #b6b5a0;
   text-decoration: underline;
 }
 a:hover {
@@ -11499,7 +11499,7 @@ body {
 }
 @media (max-width: 992px) {
   #mainNav {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(246, 241, 237);
   }
 }
 #mainNav .navbar-toggler {
@@ -11588,6 +11588,10 @@ body {
 }
 
 .masthead {
+  -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   position: absolute;
   top: 0;
   width: 100%;
@@ -11652,9 +11656,9 @@ body {
   /* background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 241, 237, 1) 50%, rgba(246, 241, 237, 1) 100%); */
   /*padding-bottom: 10rem;*/
 }
-.trainings-section .featured-text {
+/* .trainings-section .featured-text {
   padding: 2rem;
-}
+} */
 @media (min-width: 992px) {
   .trainings-section .featured-text {
     padding: 0 0 0 2rem;
@@ -11679,9 +11683,9 @@ body {
 /* .team-section {
   padding: 5rem 0;
 } */
-.team-section .featured-text {
+/* .team-section .featured-text {
   padding: 2rem;
-}
+} */
 @media (min-width: 992px) {
   .team-section .featured-text {
     padding: 0 0 0 2rem;
@@ -12339,3 +12343,144 @@ header.masthead-blog .site-heading .h1 {
 }
 
 /* Custom size */
+
+/* Custom styles */
+
+/* Container holding the image and the text */
+.my-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  /* left: 16px; */
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Custom styles */
+
+
+
+@media (min-width: 992px) {
+  .replace {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .replaced {
+    display: none;
+  }
+}
+
+@media (min-width: 1244px) {
+  .replace-l {
+    display: none;
+  }
+}
+
+@media (max-width: 1244px) {
+  .replaced-l {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .replace-s {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .replaced-s {
+    display: none;
+  }
+}
+
+
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+  }
+  100% {
+     opacity: 0;
+     -webkit-transform: translateY(-300px);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+  100% {
+     opacity: 0;
+     transform: translateY(-300px);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(-300px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-300px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
