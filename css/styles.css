@@ -12389,6 +12389,13 @@ header.masthead-blog .site-heading .h1 {
   transform: translate(-50%, -50%);
 }
 
+.centered-right {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -90%);
+}
+
 /* Custom styles */
 
 
