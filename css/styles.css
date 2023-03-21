@@ -106,7 +106,7 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 }
 
@@ -485,6 +485,12 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+
+.lead > a {
+  font-size: initial;
+  font-weight: initial;
 }
 
 .display-1 {
@@ -11667,7 +11673,7 @@ body {
 }
 .trainings-section .training-text {
   padding: 3rem;
-  font-size: 90%;
+  /* font-size: 90%; */
 }
 @media (min-width: 992px) {
   .trainings-section .training-text {
@@ -12490,4 +12496,24 @@ header.masthead-blog .site-heading .h1 {
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.subhead::first-letter {
+  initial-letter: 2;
+  margin-right: 8px;
+  font-family: Georgia, serif;
+}
+
+.subhead-3::first-letter {
+  initial-letter: 3;
+  margin-right: 8px;
+  font-family: Georgia, serif;
+}
+
+.display-none {
+  display: none;
 }
