@@ -54,7 +54,34 @@
                 newsletter to receive information about upcoming events focused on physical and mental health and
                 mindful living.</p>
             <br>
-            <div class="text-center"><button>JOIN OUR COMUNITY</button></div>
+            <div class="text-center"><button data-bs-toggle="modal" data-bs-target="#exampleModal">JOIN OUR
+                    COMUNITY</button></div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Subscribe to our newsletter</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form id="subscribe" method=post action="./mail/contact_me.php" accept-charset=UTF-8>
+                            <div class="modal-body">
+
+                                <label for="mail" class="form-label">Email address</label>
+                                <input type="email" placeholder="Enter your email address..." class="form-control"
+                                    id="mail" name="mail" aria-describedby="emailHelp">
+
+                            </div>
+                            <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                <button type="submit" class="btn btn-primary" onclick="confirm()">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
