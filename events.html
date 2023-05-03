@@ -66,12 +66,12 @@
                             <h5 class="modal-title" id="exampleModalLabel">Subscribe to our newsletter</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form id="subscribe" method=post action="./mail/contact_me.php" accept-charset=UTF-8>
+                        <form id="subscribe" method=post action="/mail/contact_me.php" accept-charset=UTF-8>
                             <div class="modal-body">
 
                                 <label for="mail" class="form-label">Email address</label>
                                 <input type="email" placeholder="Enter your email address..." class="form-control"
-                                    id="mail" name="mail" aria-describedby="emailHelp">
+                                    id="mail" name="mail" required aria-describedby="emailHelp">
 
                             </div>
                             <div class="modal-footer">
@@ -93,6 +93,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <!-- <script src="js/scripts.js"></script> -->
+    <script src="js/mail.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

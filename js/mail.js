@@ -1,12 +1,12 @@
 function closeModal() {
-    $('#exampleModal').modal('toggle');
-  }
+  $('#exampleModal').modal('toggle');
+}
 
 function confirm() {
-    let valid = $('#subscribe')[0].checkValidity();
-    let form = $('#subscribe');
-    if (valid) {
-      form.submit();
-      closeModal();
-    }
+  let valid = document.querySelector('#subscribe')[0].checkValidity();
+  let form = document.querySelector('#subscribe');
+  if (valid) {
+    form.submit();
+    // closeModal();
   }
+}
