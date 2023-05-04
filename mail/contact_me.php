@@ -11,12 +11,20 @@ if(
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
    
 // Create the email and send the message
-$to = 'gavricstanko@gmail.com';
+$to = 'office@luminous.rs';
 $email_subject = "New subscription";
 $email_body = "You have received a new subscription from your website.\n\n"."Here are the details:\n\nEmail: $email_address";
 $headers = "From: noreply@luminous.rs\n";
 $headers .= "Reply-To: $email_address\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8";   
-mail($to,$email_subject,$email_body,$headers);
+$headers .= "Content-Type: text/plain; charset=UTF-8";
+if(mail($to,$email_subject,$email_body,$headers))
+{
+   $myobj=array('status'=>'success');
+   echo json_encode($myobj);
+}
+else{
+   $myobj=array('status'=>'error');
+   echo json_encode($myobj);
+}
 return true;         
 ?>
