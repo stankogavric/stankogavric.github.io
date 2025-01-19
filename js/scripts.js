@@ -1,16 +1,16 @@
 window.addEventListener('DOMContentLoaded', event => {
 
-    const navbarBrand = document.body.querySelector('#logo');
+    // const navbarBrand = document.body.querySelector('#logo');
 
     if (window.matchMedia("(max-width: 750px)").matches) {
-        document.getElementById("background-video").src = "./assets/video/video-mobile.mp4";
+        document.getElementById("background-video").src = "./assets/video/video.mp4";
     } else {
-        document.getElementById("background-video").src = "./assets/video/video.webm";
+        document.getElementById("background-video").src = "./assets/video/video.mp4";
     }
 
-    if (window.matchMedia("(max-width: 992px)").matches) {
-        document.getElementById("logo").src = "assets/img/lmns-black.svg";
-    }
+    // if (window.matchMedia("(max-width: 992px)").matches) {
+    //     document.getElementById("logo").src = "assets/img/s-black.svg";
+    // }
 
     // Navbar shrink function
     var navbarShrink = function (hover = false) {
@@ -24,25 +24,21 @@ window.addEventListener('DOMContentLoaded', event => {
         }
         const navbarCollapsible = document.body.querySelector('.main-nav-shrink');
 
-        // navbarBrand.src = "assets/img/lmns-black.svg";
-
         if (!navbarCollapsible) {
             return;
         }
 
-        // navbarCollapsible.classList.add('navbar-shrink')
-        
         if (hover === true) {
-            navbarBrand.src = "assets/img/lmns-black.svg";
+            // navbarBrand.src = "assets/img/s-black.svg";
             navbarCollapsible.classList.add('navbar-shrink')
         }
         else if (window.scrollY === 0) {
-            if (window.matchMedia("(min-width: 992px)").matches) {
-                navbarBrand.src = "assets/img/lmns.svg";
-            }
+            // if (window.matchMedia("(min-width: 992px)").matches) {
+            //     navbarBrand.src = "assets/img/s.svg";
+            // }
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
-            navbarBrand.src = "assets/img/lmns-black.svg";
+            // navbarBrand.src = "assets/img/s-black.svg";
             navbarCollapsible.classList.add('navbar-shrink')
         }
 
@@ -84,11 +80,3 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 });
-
-/* window.addEventListener("resize", function () {
-    if (window.matchMedia("(max-width: 750px)").matches) {
-        document.getElementById("background-video").src = "./assets/video/video-mobile.mp4";
-    } else {
-        document.getElementById("background-video").src = "./assets/video/video.webm";
-    }
-}) */
