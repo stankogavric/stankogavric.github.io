@@ -4165,8 +4165,8 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  /* padding-top: 0.3125rem; */
-  /* padding-bottom: 0.3125rem; */
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
@@ -11806,7 +11806,7 @@ body {
 /* @media (max-width: 750px) {
   #background-video { display: none; }
   body {
-    background: url("../assets/img/mat.jpg") no-repeat;
+    background: url("../assets/img/centar.jpg") no-repeat;
     background-size: contain;
   }
 } */
@@ -12474,3 +12474,85 @@ header.masthead-blog .site-heading .h1 {
 .display-none {
   display: none;
 }
+
+
+
+
+
+/* Locations Section Styling */
+
+/* Card Container */
+.location-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+  position: relative;
+  height: 80vh; /* Postavi visinu slike na 80% visine ekrana */
+  overflow: hidden;
+}
+
+/* Image Styling */
+.location-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Održava proporciju slike */
+}
+
+/* Overlay for Title */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h4 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+  background-color: #ffffff;
+  flex-shrink: 0; /* Sprečava smanjivanje visine tela kartice */
+}
+
+.text-reset-green {
+  color: #4CAF50; /* Prilagođena zelena boja */
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .overlay h4 {
+      font-size: 1.4rem;
+  }
+
+  .card-body {
+      padding: 15px;
+  }
+
+  .card p {
+      font-size: 0.85rem;
+  }
+
+  .image-wrapper {
+      height: 50vh; /* Smanji visinu slike na manjim ekranima */
+  }
+}
+
