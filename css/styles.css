@@ -13681,6 +13681,7 @@ header.masthead-blog .post-heading .meta a {
   padding: 20px;
   background-color: #ffffff;
   flex-shrink: 0;
+  align-content: center;
   /* Sprečava smanjivanje visine tela kartice */
 }
 
