@@ -1,16 +1,9 @@
 window.addEventListener('DOMContentLoaded', event => {
-
-    // const navbarBrand = document.body.querySelector('#logo');
-
     if (window.matchMedia("(max-width: 750px)").matches) {
         document.getElementById("background-video").src = "./assets/video/video.mp4";
     } else {
         document.getElementById("background-video").src = "./assets/video/video.mp4";
     }
-
-    // if (window.matchMedia("(max-width: 992px)").matches) {
-    //     document.getElementById("logo").src = "assets/img/s-black.svg";
-    // }
 
     // Navbar shrink function
     var navbarShrink = function (hover = false) {
@@ -29,16 +22,11 @@ window.addEventListener('DOMContentLoaded', event => {
         }
 
         if (hover === true) {
-            // navbarBrand.src = "assets/img/s-black.svg";
             navbarCollapsible.classList.add('navbar-shrink')
         }
         else if (window.scrollY === 0) {
-            // if (window.matchMedia("(min-width: 992px)").matches) {
-            //     navbarBrand.src = "assets/img/s.svg";
-            // }
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
-            // navbarBrand.src = "assets/img/s-black.svg";
             navbarCollapsible.classList.add('navbar-shrink')
         }
 
