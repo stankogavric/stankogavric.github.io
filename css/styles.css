@@ -13785,3 +13785,13 @@ header.masthead-blog .post-heading .meta a {
     height: 50vh;
   }
 }
+
+
+
+
+@media (max-width: 576px) {
+  .row.text-center img {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+}
