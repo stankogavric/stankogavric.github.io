@@ -9077,7 +9077,7 @@ fieldset:disabled .btn {
 } */
 
 .bg-white {
-  background-color: #f8f3ef;
+  background-color: #f8f3ef !important;
 }
 
 .bg-body {
@@ -12718,6 +12718,7 @@ body {
 .trainings-section {
   /* background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(248, 243, 239, 1) 50%, rgba(248, 243, 239, 1) 100%); */
   /*padding-bottom: 10rem;*/
+  padding-top: 5rem;
 }
 
 /* .trainings-section .featured-text {
@@ -12870,6 +12871,10 @@ body {
 
 .text-justify {
   text-align: justify;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 /* @media (max-width: 750px) {
@@ -13765,4 +13770,12 @@ header.masthead-blog .post-heading .meta a {
 .carousel-control-next {
   z-index: 15;
   /* Dugmad su iznad overlay-a */
+}
+
+.height-80-vh {
+  height: 80vh;
+}
+
+.text-align-center {
+  text-align: center;
 }
