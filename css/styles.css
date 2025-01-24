@@ -13779,3 +13779,9 @@ header.masthead-blog .post-heading .meta a {
 .text-align-center {
   text-align: center;
 }
+
+@media (max-width: 576px) {
+  .height-80-vh {
+    height: 50vh;
+  }
+}
